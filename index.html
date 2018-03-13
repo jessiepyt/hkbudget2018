@@ -1,0 +1,413 @@
+<html>
+
+<head></head>
+
+<body>
+    <div id="pieChart"></div>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="d3pie.min.js"></script>
+    <script>
+        var pie = new d3pie("pieChart", {
+            "header": {
+                "title": {
+                    "text": "Hong Kong Government Esimated Expenditure in 2018-19",
+                    "fontSize": 24,
+                    "font": "open sans"
+                },
+                "subtitle": {
+                    "text": "Source: The 2018-19 Budget",
+                    "color": "#999999",
+                    "fontSize": 12,
+                    "font": "open sans"
+                },
+                "titleSubtitlePadding": 10
+            },
+            "footer": {
+                "color": "#999999",
+                "fontSize": 10,
+                "font": "open sans",
+                "location": "bottom-left"
+            },
+            "size": {
+                "canvasHeight": 600,
+                "canvasWidth": 1000,
+                "pieOuterRadius": "80%"
+            },
+            "data": {
+                "sortOrder": "value-desc",
+                "content": [{
+                    "label": "Chief Executive's Office",
+                    "value": 117007,
+                    "color": "#000000"
+                }, {
+                    "label": "Architectural Services Department",
+                    "value": 2177714,
+                    "color": "#98a9c5"
+                }, {
+                    "label": "Agriculture, Fisheries and Conservation Department",
+                    "value": 1648525,
+                    "color": "#000000"
+                }, {
+                    "label": "Audit Commission",
+                    "value": 173725,
+                    "color": "#be66a2"
+                }, {
+                    "label": "Auxiliary Medical Service",
+                    "value": 100803,
+                    "color": "#44b9ae"
+                }, {
+                    "label": "Buildings Department",
+                    "value": 1570642,
+                    "color": "#c9c2b6"
+                }, {
+                    "label": "Census and Statistics Department",
+                    "value": 672580,
+                    "color": "#273c71"
+                }, {
+                    "label": "Civil Aid Service",
+                    "value": 116899,
+                    "color": "#000000"
+                }, {
+                    "label": "Civil Aviation Department",
+                    "value": 1088247,
+                    "color": "#a5a29c"
+                }, {
+                    "label": "Civil Engineering and Development Department",
+                    "value": 2979134,
+                    "color": "#77e079"
+                }, {
+                    "label": "Correctional Services Department",
+                    "value": 3969152,
+                    "color": "#000000"
+                }, {
+                    "label": "Customs and Excise Department",
+                    "value": 4426311,
+                    "color": "#9679c6"
+                }, {
+                    "label": "Department of Health",
+                    "value": 11080699,
+                    "color": "#000000"
+                }, {
+                    "label": "Department of Justice",
+                    "value": 2290902,
+                    "color": "#000000"
+                }, {
+                    "label": "Drainage Services Department",
+                    "value": 2821876,
+                    "color": "#7c9058"
+                }, {
+                    "label": "Electrical and Mechanical Services Department",
+                    "value": 915771,
+                    "color": "#4baa49"
+                }, {
+                    "label": "Environmental Protection Department",
+                    "value": 6167198,
+                    "color": "#a3acb2"
+                }, {
+                    "label": "Fire Services Department",
+                    "value": 6676723,
+                    "color": "#005a91"
+                }, {
+                    "label": "Food and Environmental Hygiene Department",
+                    "value": 7589878,
+                    "color": "#961818"
+                }, {
+                    "label": "General Expenses of the Civil Service",
+                    "value": 3825939,
+                    "color": "#4c368f"
+                }, {
+                    "label": "Government Flying Service",
+                    "value": 622890,
+                    "color": "#d0743c"
+                }, {
+                    "label": "Government Laboratory",
+                    "value": 489331,
+                    "color": "#000000"
+                }, {
+                    "label": "Government Property Agency",
+                    "value": 2041673,
+                    "color": "#98bf6e"
+                }, {
+                    "label": "Government Secretariat: Civil Service Bureau",
+                    "value": 652846,
+                    "color": "#000000"
+                }, {
+                    "label": "Government Secretariat: Commerce and Economic Development Bureau (Commerce, Industry and Tourism Branch)",
+                    "value": 2633651,
+                    "color": "#a9c2bb"
+                }, {
+                    "label": "Government Secretariat: Commerce and Economic Development Bureau (Communications and Creative Industries Branch)",
+                    "value": 526430,
+                    "color": "#8bde90"
+                }, {
+                    "label": "Government Secretariat: Constitutional and Mainland Affairs Bureau",
+                    "value": 676072,
+                    "color": "#7fcecf"
+                }, {
+                    "label": "Government Secretariat: Development Bureau (Planning and Lands Branch)",
+                    "value": 689936,
+                    "color": "#000000"
+                }, {
+                    "label": "Government Secretariat: Development Bureau (Works Branch)",
+                    "value": 583330,
+                    "color": "#000000"
+                }, {
+                    "label": "Government Secretariat: Education Bureau",
+                    "value": 63702930,
+                    "color": "#634a22"
+                }, {
+                    "label": "Government Secretariat: Environment Bureau",
+                    "value": 91794,
+                    "color": "#000000"
+                }, {
+                    "label": "Government Secretariat: Financial Services and the Treasury Bureau (Financial Services Branch)",
+                    "value": 770232,
+                    "color": "#000000"
+                }, {
+                    "label": "Government Secretariat: Financial Services and the Treasury Bureau (The Treasury Branch)",
+                    "value": 304311,
+                    "color": "#000000"
+                }, {
+                    "label": "Government Secretariat: Food and Health Bureau (Food Branch)",
+                    "value": 165583,
+                    "color": "#7b6688"
+                }, {
+                    "label": "Government Secretariat: Food and Health Bureau (Health Branch)",
+                    "value": 63342179,
+                    "color": "#d8d138"
+                }, {
+                    "label": "Government Secretariat: Home Affairs Bureau",
+                    "value": 2057808,
+                    "color": "#6ada6a"
+                }, {
+                    "label": "Government Secretariat: Innovation and Technology Bureau",
+                    "value": 590202,
+                    "color": "#000000"
+                }, {
+                    "label": "Government Secretariat: Innovation and Technology Commission",
+                    "value": 691955,
+                    "color": "#0a6097"
+                }, {
+                    "label": "Government Secretariat: Labour and Welfare Bureau",
+                    "value": 849047,
+                    "color": "#b77a18"
+                }, {
+                    "label": "Government Secretariat: Office of the Government Chief Information Officer",
+                    "value": 777508,
+                    "color": "#d2ab58"
+                }, {
+                    "label": "Government Secretariat: Offices of the Chief Secretary for Administration and the Financial Secretary",
+                    "value": 885635,
+                    "color": "#64a61f"
+                }, {
+                    "label": "Government Secretariat: Overseas Economic and Trade Offices",
+                    "value": 425335,
+                    "color": "#000000"
+                }, {
+                    "label": "Government Secretariat: Security Bureau",
+                    "value": 773518,
+                    "color": "#000000"
+                }, {
+                    "label": "Government Secretariat: Transport and Housing Bureau (Transport Branch)",
+                    "value": 293494,
+                    "color": "#000000"
+                }, {
+                    "label": "Highways Department",
+                    "value": 3862156,
+                    "color": "#000000"
+                }, {
+                    "label": "Home Affairs Department",
+                    "value": 2902836,
+                    "color": "#000000"
+                }, {
+                    "label": "Hong Kong Observatory",
+                    "value": 338539,
+                    "color": "#bca349"
+                }, {
+                    "label": "Hong Kong Police Force",
+                    "value": 19662158,
+                    "color": "#22af8c"
+                }, {
+                    "label": "Housing Department",
+                    "value": 322650,
+                    "color": "#000000"
+                }, {
+                    "label": "Immigration Department",
+                    "value": 5683240,
+                    "color": "#8db27c"
+                }, {
+                    "label": "Independent Commission Against Corruption",
+                    "value": 1120424,
+                    "color": "#000000"
+                }, {
+                    "label": "Independent Police Complaints Council",
+                    "value": 76841,
+                    "color": "#000000"
+                }, {
+                    "label": "Information Services Department",
+                    "value": 499386,
+                    "color": "#3c3887"
+                }, {
+                    "label": "Inland Revenue Department",
+                    "value": 1633897,
+                    "color": "#207f32"
+                }, {
+                    "label": "Intellectual Property Department",
+                    "value": 167172,
+                    "color": "#005064"
+                }, {
+                    "label": "Invest Hong Kong",
+                    "value": 139008,
+                    "color": "#b0a474"
+                }, {
+                    "label": "Joint Secretariat for the Advisory Bodies on Civil Service and Judicial Salaries and Conditions of Service",
+                    "value": 33757,
+                    "color": "#2081c1"
+                }, {
+                    "label": "Judiciary",
+                    "value": 1901759,
+                    "color": "#69a5f9"
+                }, {
+                    "label": "Labour Department",
+                    "value": 2148376,
+                    "color": "#9ed3c5"
+                }, {
+                    "label": "Lands Department",
+                    "value": 2750380,
+                    "color": "#31373b"
+                }, {
+                    "label": "Legal Aid Department",
+                    "value": 1116769,
+                    "color": "#000000"
+                }, {
+                    "label": "Legislative Council Commission",
+                    "value": 890077,
+                    "color": "#000000"
+                }, {
+                    "label": "Leisure and Cultural Services Department",
+                    "value": 9091340,
+                    "color": "#1f79a7"
+                }, {
+                    "label": "Marine Department",
+                    "value": 1540054,
+                    "color": "#000000"
+                }, {
+                    "label": "Miscellaneous Services",
+                    "value": 16921008,
+                    "color": "#cc0d0d"
+                }, {
+                    "label": "Office for Film, Newspaper and Article Administration",
+                    "value": 50316,
+                    "color": "#77979f"
+                }, {
+                    "label": "Office of The Ombudsman",
+                    "value": 117139,
+                    "color": "#000000"
+                }, {
+                    "label": "Official Receiver's Office",
+                    "value": 343556,
+                    "color": "#00644b"
+                }, {
+                    "label": "Pensions",
+                    "value": 37934730,
+                    "color": "#e98125"
+                }, {
+                    "label": "Planning Department",
+                    "value": 731245,
+                    "color": "#000000"
+                }, {
+                    "label": "Public Service Commission Secretariat",
+                    "value": 27074,
+                    "color": "#546e91"
+                }, {
+                    "label": "Radio Television Hong Kong",
+                    "value": 1012461,
+                    "color": "#000000"
+                }, {
+                    "label": "Rating and Valuation Department",
+                    "value": 555395,
+                    "color": "#000000"
+                }, {
+                    "label": "Registration and Electoral Office",
+                    "value": 711357,
+                    "color": "#a05c56"
+                }, {
+                    "label": "Secretariat, Commissioner on Interception of Communications and Surveillance",
+                    "value": 24573,
+                    "color": "#7f7dce"
+                }, {
+                    "label": "Social Welfare Department",
+                    "value": 83769368,
+                    "color": "#c2643f"
+                }, {
+                    "label": "Trade and Industry Department",
+                    "value": 775251,
+                    "color": "#9a72ab"
+                }, {
+                    "label": "Transport Department",
+                    "value": 4485915,
+                    "color": "#000000"
+                }, {
+                    "label": "Treasury",
+                    "value": 406795,
+                    "color": "#000000"
+                }, {
+                    "label": "University Grants Committee",
+                    "value": 22207113,
+                    "color": "#e4a049"
+                }, {
+                    "label": "Water Supplies Department",
+                    "value": 8403976,
+                    "color": "#000000"
+                }, {
+                    "label": "Working Family and Student Financial Assistance Agency",
+                    "value": 7907849,
+                    "color": "#8cc0e9"
+                }, {
+                    "label": "Transfers to Funds",
+                    "value": 2590000,
+                    "color": "#000000"
+                }]
+            },
+            "labels": {
+                "outer": {
+                    "format": "none",
+                    "pieDistance": 21
+                },
+                "inner": {
+                    "hideWhenLessThanPercentage": 8
+                },
+                "percentage": {
+                    "color": "#ffffff",
+                    "fontSize": 12,
+                    "decimalPlaces": 0
+                },
+                "value": {
+                    "color": "#adadad"
+                }
+            },
+            "tooltips": {
+                "enabled": true,
+                "type": "placeholder",
+                "string": "{label}: {value}, {percentage}%"
+            },
+            "effects": {
+                "pullOutSegmentOnClick": {
+                    "effect": "none",
+                    "speed": 400,
+                    "size": 8
+                }
+            },
+            "misc": {
+                "gradient": {
+                    "enabled": true,
+                    "percentage": 100
+                }
+            },
+            "callbacks": {}
+        });
+    </script>
+
+</body>
+
+</html>
